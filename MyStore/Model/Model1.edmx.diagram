@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f810007c164348f2a7a8ae26b9689e26" Name="Diagram1">
+        <EntityTypeShape EntityType="MyStoreDBModel.Customer" Width="1.5" PointX="6" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.Input" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.InputInfo" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.Object" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.Output" Width="1.5" PointX="6" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.OutputInfo" Width="1.5" PointX="8.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.Suplier" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.Unit" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.UserRole" Width="1.5" PointX="8.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyStoreDBModel.User" Width="1.5" PointX="11" PointY="8.375" IsExpanded="true" />
+        <AssociationConnector Association="MyStoreDBModel.FK__OutputInf__IdCus__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="MyStoreDBModel.FK__InputInfo__IdInp__239E4DCF" ManuallyRouted="false" />
+        <AssociationConnector Association="MyStoreDBModel.FK__InputInfo__IdObj__22AA2996" ManuallyRouted="false" />
+        <AssociationConnector Association="MyStoreDBModel.FK__Object__IdSuplie__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="MyStoreDBModel.FK__Object__IdUnit__164452B1" ManuallyRouted="false" />
+        <AssociationConnector Association="MyStoreDBModel.FK__OutputInf__IdObj__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="MyStoreDBModel.FK__OutputInfo__Id__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="MyStoreDBModel.FK__Users__IdRole__1BFD2C07" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
