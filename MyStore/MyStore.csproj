@@ -131,6 +131,7 @@
     <Compile Include="Model\OutputInfo.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\Remaining.cs" />
     <Compile Include="Model\Suplier.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

@@ -311,7 +311,7 @@
                                                 HorizontalAlignment="Left"
                                                 VerticalAlignment="Center"
                                                 Style="{StaticResource MaterialDesignHeadline4TextBlock}"
-                                                Text="2020" />
+                                                Text="9999" />
                                             <StackPanel
                                                 Grid.Row="2"
                                                 Margin="16,0,16,8"
@@ -445,14 +445,15 @@
                         </Grid>
 
                         <Grid Grid.Row="2">
-                            <ListView>
+                            <ListView ItemsSource="{Binding RemainingList}">
                                 <ListView.View>
                                     <GridView>
-                                        <GridViewColumn Header="No" />
-                                        <GridViewColumn Header="Material Name" />
-                                        <GridViewColumn Header="Ramaining Amount" />
+                                        <GridViewColumn DisplayMemberBinding="{Binding No}" Header="No" />
+                                        <GridViewColumn DisplayMemberBinding="{Binding Object.DisplayName}" Header="Material Name" />
+                                        <GridViewColumn DisplayMemberBinding="{Binding Count}" Header="Ramaining Amount" />
                                     </GridView>
                                 </ListView.View>
+                                <ContentControl Content="ContentControl" />
                             </ListView>
                         </Grid>
 
@@ -462,5 +463,13 @@
             </Grid>
 
         </Grid>
+        <ContentControl
+            Grid.Row="1"
+            Width="6"
+            Height="4"
+            Margin="472,439,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="ContentControl" />
     </Grid>
 </Window>
