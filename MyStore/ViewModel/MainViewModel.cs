@@ -1,4 +1,5 @@
-﻿using MyStore.ViewModel;
+﻿using MyStore.Model;
+using MyStore.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;

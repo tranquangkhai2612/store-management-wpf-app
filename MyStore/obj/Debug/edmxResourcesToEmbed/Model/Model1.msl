@@ -4,105 +4,105 @@
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="MyStoreDBModel.Customer">
         <MappingFragment StoreEntitySet="Customer">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
           <ScalarProperty Name="ContractDay" ColumnName="ContractDay" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Inputs">
       <EntityTypeMapping TypeName="MyStoreDBModel.Input">
         <MappingFragment StoreEntitySet="Input">
-          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="DateInput" ColumnName="DateInput" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="InputInfoes">
       <EntityTypeMapping TypeName="MyStoreDBModel.InputInfo">
         <MappingFragment StoreEntitySet="InputInfo">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="IdObject" ColumnName="IdObject" />
-          <ScalarProperty Name="IdInput" ColumnName="IdInput" />
-          <ScalarProperty Name="Count" ColumnName="Count" />
-          <ScalarProperty Name="InputPrice" ColumnName="InputPrice" />
-          <ScalarProperty Name="OutputPrice" ColumnName="OutputPrice" />
           <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OutputPrice" ColumnName="OutputPrice" />
+          <ScalarProperty Name="InputPrice" ColumnName="InputPrice" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="IdInput" ColumnName="IdInput" />
+          <ScalarProperty Name="IdObject" ColumnName="IdObject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Objects">
       <EntityTypeMapping TypeName="MyStoreDBModel.Object">
         <MappingFragment StoreEntitySet="Object">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
-          <ScalarProperty Name="IdUnit" ColumnName="IdUnit" />
-          <ScalarProperty Name="IdSuplier" ColumnName="IdSuplier" />
-          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
           <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="QRCode" ColumnName="QRCode" />
+          <ScalarProperty Name="IdSuplier" ColumnName="IdSuplier" />
+          <ScalarProperty Name="IdUnit" ColumnName="IdUnit" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Outputs">
       <EntityTypeMapping TypeName="MyStoreDBModel.Output">
         <MappingFragment StoreEntitySet="Output">
-          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="DateOutput" ColumnName="DateOutput" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OutputInfoes">
       <EntityTypeMapping TypeName="MyStoreDBModel.OutputInfo">
         <MappingFragment StoreEntitySet="OutputInfo">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="IdObject" ColumnName="IdObject" />
-          <ScalarProperty Name="IdCustomer" ColumnName="IdCustomer" />
-          <ScalarProperty Name="Count" ColumnName="Count" />
           <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="IdCustomer" ColumnName="IdCustomer" />
+          <ScalarProperty Name="IdObject" ColumnName="IdObject" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Supliers">
       <EntityTypeMapping TypeName="MyStoreDBModel.Suplier">
         <MappingFragment StoreEntitySet="Suplier">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
           <ScalarProperty Name="ContractDay" ColumnName="ContractDay" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Units">
       <EntityTypeMapping TypeName="MyStoreDBModel.Unit">
         <MappingFragment StoreEntitySet="Unit">
-          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UserRoles">
       <EntityTypeMapping TypeName="MyStoreDBModel.UserRole">
         <MappingFragment StoreEntitySet="UserRole">
-          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="MyStoreDBModel.User">
         <MappingFragment StoreEntitySet="Users">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="IdRole" ColumnName="IdRole" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
