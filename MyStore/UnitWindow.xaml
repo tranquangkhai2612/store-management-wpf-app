@@ -12,7 +12,7 @@
     Width="800"
     Height="450"
     Background="{DynamicResource MaterialDesignPaper}"
-    DataContext="{StaticResource MainVM}"
+    DataContext="{StaticResource UnitVM}"
     FontFamily="{DynamicResource MaterialDesignFont}"
     ResizeMode="NoResize"
     TextElement.FontSize="13"
@@ -27,7 +27,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto" />
             <RowDefinition />
-            <RowDefinition />
+
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <uc:ControlBarUC Tag="{Binding Title, ElementName=window}" />
@@ -47,7 +47,7 @@
                         VerticalAlignment="Center"
                         materialDesign:HintAssist.Hint="Unit Name"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                        Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" />
+                        Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
                 </Grid>
             </materialDesign:Card>
 
@@ -78,7 +78,7 @@
                 Grid.Row="2"
                 Margin="5"
                 VerticalAlignment="Stretch">
-                <ListView ItemsSource="{Binding List}" SelectedItem="{Binding SelectedItem, Mode=OneWayToSource}">
+                <ListView ItemsSource="{Binding List, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
                     <ListView.View>
                         <GridView>
                             <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" />

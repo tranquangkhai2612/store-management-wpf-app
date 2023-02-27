@@ -4,5 +4,7 @@
     xmlns:viewmodel="clr-namespace:MyStore.ViewModel">
     <viewmodel:MainViewModel x:Key="MainVM" />
     <viewmodel:LoginViewModel x:Key="LoginVM" />
+    <viewmodel:UnitViewModel x:Key="UnitVM" />
+
 
 </ResourceDictionary>
