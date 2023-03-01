@@ -12,7 +12,7 @@
     Width="800"
     Height="500"
     Background="{DynamicResource MaterialDesignPaper}"
-    DataContext="{StaticResource MainVM}"
+    DataContext="{StaticResource CustomerVM}"
     FontFamily="{DynamicResource MaterialDesignFont}"
     ResizeMode="NoResize"
     TextElement.FontSize="13"
@@ -124,13 +124,13 @@
                     <ListView ItemsSource="{Binding List}" SelectedItem="{Binding SelectedItem, Mode=OneWayToSource}">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn DisplayMemberBinding="{Binding Id, UpdateSourceTrigger=PropertyChanged}" Header="Id" />
-                                <GridViewColumn DisplayMemberBinding="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" Header="Name" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Address, UpdateSourceTrigger=PropertyChanged}" Header="Address" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Phone, UpdateSourceTrigger=PropertyChanged}" Header="Phone" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Email, UpdateSourceTrigger=PropertyChanged}" Header="Email" />
-                                <GridViewColumn DisplayMemberBinding="{Binding MoreInfo, UpdateSourceTrigger=PropertyChanged}" Header="More Info" />
-                                <GridViewColumn DisplayMemberBinding="{Binding ContractDay, UpdateSourceTrigger=PropertyChanged}" Header="Contract Date" />
+                                <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" />
+                                <GridViewColumn DisplayMemberBinding="{Binding DisplayName}" Header="Name" />
+                                <GridViewColumn DisplayMemberBinding="{Binding Address}" Header="Address" />
+                                <GridViewColumn DisplayMemberBinding="{Binding Phone}" Header="Phone" />
+                                <GridViewColumn DisplayMemberBinding="{Binding Email}" Header="Email" />
+                                <GridViewColumn DisplayMemberBinding="{Binding MoreInfo}" Header="More Info" />
+                                <GridViewColumn DisplayMemberBinding="{Binding ContractDay, StringFormat='dd/MM/yyyy'}" Header="Contract Date" />
                             </GridView>
                         </ListView.View>
                     </ListView>

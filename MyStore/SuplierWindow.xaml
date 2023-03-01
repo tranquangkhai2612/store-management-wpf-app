@@ -12,7 +12,7 @@
     Width="800"
     Height="500"
     Background="{DynamicResource MaterialDesignPaper}"
-    DataContext="{StaticResource MainVM}"
+    DataContext="{StaticResource SuplierVM}"
     FontFamily="{DynamicResource MaterialDesignFont}"
     ResizeMode="NoResize"
     TextElement.FontSize="13"
@@ -91,7 +91,7 @@
                         Margin="5,5,15,5"
                         materialDesign:HintAssist.Hint="Pick Date"
                         materialDesign:TextFieldAssist.HasClearButton="True"
-                        SelectedDate="{Binding ContractDay}"
+                        SelectedDate="{Binding ContractDay, StringFormat='dd/MM/yyyy'}"
                         Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
                 </Grid>
             </materialDesign:Card>

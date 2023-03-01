@@ -9,10 +9,12 @@
 
 namespace MyStore.Model
 {
+    using MyStore.ViewModel;
     using System;
     using System.Collections.Generic;
-    
-    public partial class Object
+    using System.Windows.Controls;
+
+    public partial class Object : BaseViewModel
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Object()
@@ -20,18 +22,35 @@ namespace MyStore.Model
             this.InputInfoes = new HashSet<InputInfo>();
             this.OutputInfoes = new HashSet<OutputInfo>();
         }
-    
-        public string Id { get; set; }
-        public string DisplayName { get; set; }
-        public int IdUnit { get; set; }
-        public int IdSuplier { get; set; }
-        public string QRCode { get; set; }
-        public string BarCode { get; set; }
+        private string _Id;
+        public string Id { get => _Id; set { _Id = value; OnPropertyChanged(); } }
+
+        private string _DisplayName;
+        public string DisplayName { get => _DisplayName; set { _DisplayName = value; OnPropertyChanged(); } }
+
+        private int _IdUnit;
+        public int IdUnit { get => _IdUnit; set { _IdUnit = value; OnPropertyChanged(); } }
+
+        private int  _IdSuplier;
+        public int IdSuplier { get => _IdSuplier; set { _IdSuplier = value; OnPropertyChanged(); } }
+
+        private string _QRCode;
+        public string QRCode { get => _QRCode; set { _QRCode = value; OnPropertyChanged(); } }
+
+        private string _BarCode;
+        public string BarCode { get => _BarCode; set { _BarCode = value; OnPropertyChanged(); } }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<InputInfo> InputInfoes { get; set; }
-        public virtual Suplier Suplier { get; set; }
-        public virtual Unit Unit { get; set; }
+        private Suplier _Suplier;
+        public virtual Suplier Suplier { get => _Suplier; set { _Suplier = value; OnPropertyChanged(); } }
+
+        private Unit _Unit;
+        public virtual Unit Unit { get => _Unit; set { _Unit = value; OnPropertyChanged(); } }
+
+
+        // public virtual Suplier Suplier { get; set; }
+        // public virtual Unit Unit { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OutputInfo> OutputInfoes { get; set; }
     }
