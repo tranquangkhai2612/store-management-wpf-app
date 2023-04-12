@@ -51,7 +51,7 @@ namespace MyStore.ViewModel
                 var loginVM = loginWindow.DataContext as LoginViewModel;
                 if(loginVM.IsLogin) {
                     p.Show(); // show mainwindow
-                    loadRemainingData();
+                    // loadRemainingData();
                 }
                 else
                 {

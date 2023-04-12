@@ -35,7 +35,7 @@ namespace MyStore.Model
 
         private string _Email;
         public string Email { get => _Email; set { _Email = value; OnPropertyChanged(); } }
-
+            
         private string _MoreInfo;
         public string MoreInfo { get => _MoreInfo; set { _MoreInfo = value; OnPropertyChanged(); } }
 

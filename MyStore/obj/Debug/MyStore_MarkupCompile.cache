@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\Learning\C#\MyStore\MyStore\obj\Debug\
+D:\Learn\C#\MyStore\MyStore\obj\Debug\
 MyStore
 none
 false
 DEBUG;TRACE
-D:\Learning\C#\MyStore\MyStore\App.xaml
+D:\Learn\C#\MyStore\MyStore\App.xaml
 11369447347
 2739969757
 371203920459
-232104517650
+23-255512310
 CustomerWindow.xaml;InputWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ObjectWindow.xaml;OutputWindow.xaml;ResourceXAML\MainResource.xaml;SuplierWindow.xaml;UnitWindow.xaml;UserControlStore\ControlBarUC.xaml;UserWindow.xaml;
 
 False
